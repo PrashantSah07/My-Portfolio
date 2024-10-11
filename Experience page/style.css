@@ -1,0 +1,406 @@
+/* ========= RESET CSS ========= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 5, 16);
+    color: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+}
+
+.heading h1 {
+    display: flex;
+    align-items: center;
+}
+
+.heading h1 span {
+    color: #783dff;
+    font-size: 30px;
+    animation: scale-N-rotate 1s linear 1 reverse;
+}
+
+
+@keyframes scale-N-rotate {
+    from {}
+
+    to {
+        transform: scale(2.5) rotate(360deg);
+    }
+}
+
+.container {
+    padding: 20px 100px;
+}
+
+.main {
+    font-family: "Poppins", sans-serif;
+}
+
+.main p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project {
+    font-family: "Poppins", sans-serif;
+    padding: 30px 100px 0px 100px;
+}
+
+.project ul li {
+    list-style-position: inside;
+}
+
+.project h1 {
+    color: #783dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-logo {
+    color: white;
+    width: 30px;
+}
+
+.project span {
+    color: rgb(255, 0, 72);
+}
+
+#minor-project {
+    color: rgb(72, 255, 0);
+    text-decoration: underline;
+    line-height: 43px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#title {
+    line-height: 60px;
+}
+
+#description {
+    line-height: 23px;
+}
+
+#desc {
+    color: white;
+}
+
+#technology-used {
+    line-height: 70px;
+}
+
+.certificate {
+    font-family: "Poppins", sans-serif;
+    padding: 20px 100px 0px 100px;
+}
+
+.certificate h1 {
+    color: #783dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#certificate-logo {
+    width: 30px;
+    color: white;
+}
+
+.certificate #Netlink {
+    color: rgb(72, 255, 0);
+    text-decoration: underline;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+#right-arrow {
+    width: 30px;
+}
+
+.certificate a {
+    text-decoration: none;
+}
+
+.certificate button {
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 20px 0px;
+    color: #783dff;
+    border: 2px solid #783dff;
+    background-color: rgb(1, 5, 16);
+    transition: 0.3s;
+}
+
+.certificate button:hover {
+    transform: scale(1.1) translate(20%);
+    box-shadow: 0 0 7px #783dff;
+    transition: 0.8s;
+}
+
+.skills {
+    font-family: "Poppins", sans-serif;
+    padding: 0px 100px 50px 100px;
+}
+
+.skills h1 {
+    color: #783dff;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+#skills-logo {
+    color: white;
+    width: 30px;
+}
+
+.skills #website-designer {
+    color: rgb(72, 255, 0);
+    text-decoration: underline;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.skills ul {
+    padding-top: 20px;
+    color: rgb(255, 0, 72);
+}
+
+.skills ul li {
+    color: white;
+}
+
+.skills ul li:first-child {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width:1250px) {
+    .project {
+        padding: 30px 50px 0px 50px;
+    }
+
+    .certificate {
+        padding: 20px 50px 0px 50px;
+    }
+
+    .skills {
+        padding: 0px 50px 50px 50px;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .project {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .certificate {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .skills {
+        padding: 0px 0px 50px 0px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .heading {
+        font-size: 1.1em;
+    }
+
+    .main p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .container {
+        padding: 20px 50px;
+    }
+}
+
+@media only screen and (max-width:740px) {
+
+    #title {
+        line-height: 24px;
+        margin: 25px 0;
+    }
+
+    #technology-used {
+        line-height: 24px;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+
+    .container {
+        padding: 20px 30px;
+    }
+
+    .skills ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .main p {
+        font-size: 15px;
+    }
+
+    #minor-project {
+        line-height: 23px;
+        font-size: 18px;
+    }
+
+    .certificate #Netlink {
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .skills #website-designer {
+        line-height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #title {
+        font-size: 14px;
+    }
+
+    #title span {
+        font-size: 16px;
+    }
+
+    #desc {
+        font-size: 14px;
+    }
+
+    #technology-used {
+        font-size: 14px;
+    }
+
+    #technology-used span {
+        font-size: 16px;
+    }
+
+    .certificate button {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .certificate a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .heading h1 span {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .heading h1 {
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:260px) {
+    .heading h1 {
+        font-size: 19px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .heading h1 span {
+        font-size: 20px;
+    }
+
+    .main p {
+        font-size: 12px;
+    }
+
+    .project {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .project h1 {
+        font-size: 25px;
+    }
+
+    #project-logo {
+        width: 20px;
+    }
+
+    #minor-project {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        line-height: 0px;
+    }
+
+    .certificate h1 {
+        font-size: 20px;
+    }
+
+    #certificate-logo {
+        width: 20px;
+    }
+
+    .certificate #Netlink {
+        line-height: 30px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills h1 {
+        font-size: 25px;
+    }
+
+    #skills-logo {
+        width: 20px;
+    }
+
+    .skills #website-designer {
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
